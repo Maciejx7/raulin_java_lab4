@@ -1,38 +1,26 @@
 public class Main {
     public static void main(String[] args){
- /* zad.1
-        a) napisać interfejs CzlowiekI
-        b) zadeklarować 2 metody
-        c) napisać interfejs StudentI który dziedziczy po interfejsie CzlowiekI
-        d) zadeklarować 3 metody
-        e) napisać interfejs PracownikI który dziedziczy po interfejsie CzlowiekI
-        f) zadeklarować 3 metody
-         */
+/* zad.1
+        a) stworzyć klasę abstrakcyjną Figura
+        b) stworzyć metody abstrakcyjne pole() i obwod()
+        c) stworzyć zwykłą metodę nazwaFigury(String figura), która będzie zwracała tekst 'To jest figura: .....',
+        */
 
         /* zad.2
-        a) napisać klasę Student która będzie implementować interfejs StudentI
-        b) napisać klasę Pracownik która będzie implementować interfejs PracownikI
-        c) stworzyć pola, gettery i settery, metodę toString dla obu klas, (constructor z przeciążeniem - jak ktoś chce ),
-        (gettery i settery / toString() ..., najlepiej wygenerować: Code/Prawy myszy-->Generate-->getters/setters/toString)
+        a) stworzyć klasę kwadrat i prostokat które będą dziedziczyć po klasie Figura
+        b) zaimplementować metody abstrakcyjne odpowiednimi wzorami,
+        c) stworzyć objekty tych klas i wyświetlić przykładowe wyliczenia
         */
+        Kwadrat kwad = new Kwadrat();
+        System.out.println(kwad.getPole(20));
+        kwad.nazwaFigury();
 
-        /* zad.3
-        a) stworzyć 2 objekty typu Student i uzupełnić wszystkie pola
-        b) stworzyć 2 objekty typu Pracownik i uzupełnić wszystkie pola
-        c) wypisać metody toString() wszystkich objektów
-        zad.4 - Dla chętnych
-        a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
-        b) zaimplementować wszystkie metody, i stworzyć pola
-        c) stworzyć 2 objekty typu Kierownik i uzupełnić wszystkie pola,
-        d) stworzyć listę typu PracownikI --> List<PracownikI> listaPracownikow = new ArrayList<>();
-        e) dodać do niej objekty typu Kierownik i Pracownik
-        f) wypisać pętlą metody toString() wszystkich elementów listy
-        */
+        Prostokat pros = new Prostokat();
+        System.out.println(pros.getPole1(20, 10));
+        kwad.nazwaFigury();
 
-        /* zad5 - Dla chętnych
-        Stworzyć klasę która będzie implementować 2 lub 3 interfejsy następnie będzie
-        dziedziczona przez inną klasę
-        */
-
+        Prostokat obw = new Prostokat();
+        System.out.println(obw.getObw1(20, 10));
+        kwad.nazwaFigury();
     }
 }
