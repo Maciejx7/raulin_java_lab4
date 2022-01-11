@@ -1,36 +1,38 @@
 public class Main {
     public static void main(String[] args){
-/* zad.1
-        a) Stwożyć interfejs Budynek,
-        b) interfejs powinien mieć metody:
-            - double powierzchnia(double pow);
-            - String adresBudynku(String adres);
-            - int liczbaOkien(int value);
-            - void liczbaMieszkancow(int value);
-            - void kolorDomu(KolorEnum kolor);
-        c) stworzyć enum KolorEnum z przykładowymi kolorami,
-        d) stworzyć jedną metodę z 2 parametrami wymyśloną przez siebie,
-        */
+ /* zad.1
+        a) napisać interfejs CzlowiekI
+        b) zadeklarować 2 metody
+        c) napisać interfejs StudentI który dziedziczy po interfejsie CzlowiekI
+        d) zadeklarować 3 metody
+        e) napisać interfejs PracownikI który dziedziczy po interfejsie CzlowiekI
+        f) zadeklarować 3 metody
+         */
 
         /* zad.2
-        a) napisać klasę Dom implementującą interfejs Budynek,
-        b) zaimplementować wszystkie metody,
-        c) stworzyć brakujące pola(prywatne), gettery i settery, napisać metodę toString
-        (gettery i settery najlepiej wygenerować: Code/Prawy myszy --> Generate --> getters/setters/toString)
-        d) stworzyć jedną dowolną metodę przez siebie
+        a) napisać klasę Student która będzie implementować interfejs StudentI
+        b) napisać klasę Pracownik która będzie implementować interfejs PracownikI
+        c) stworzyć pola, gettery i settery, metodę toString dla obu klas, (constructor z przeciążeniem - jak ktoś chce ),
+        (gettery i settery / toString() ..., najlepiej wygenerować: Code/Prawy myszy-->Generate-->getters/setters/toString)
         */
 
         /* zad.3
-        a) w klasie Main stworzyć 2 objekty typu Dom deklarując pierwszy objekt Typem Dom,
-        drugi objekt typem Budynek,
-        b) wykorzystać wszystkie metody do implementacji pól
-        c) wyświetlić w konsoli metodę toString (na obu objektach) opisującą zachowanie klasy Dom
+        a) stworzyć 2 objekty typu Student i uzupełnić wszystkie pola
+        b) stworzyć 2 objekty typu Pracownik i uzupełnić wszystkie pola
+        c) wypisać metody toString() wszystkich objektów
+        zad.4 - Dla chętnych
+        a) stworzyć klasę Kierownik która będzie implementować interfejs PracownikI,
+        b) zaimplementować wszystkie metody, i stworzyć pola
+        c) stworzyć 2 objekty typu Kierownik i uzupełnić wszystkie pola,
+        d) stworzyć listę typu PracownikI --> List<PracownikI> listaPracownikow = new ArrayList<>();
+        e) dodać do niej objekty typu Kierownik i Pracownik
+        f) wypisać pętlą metody toString() wszystkich elementów listy
         */
-        Dom dom1 = new Dom();
-        dom1.setadresBudynku("mickiewicza");
-        dom1.powierzchnia(10);
-        dom1.liczbaOkien(6);
-        dom1.liczbaMieszkancow(2);
-        System.out.println();
+
+        /* zad5 - Dla chętnych
+        Stworzyć klasę która będzie implementować 2 lub 3 interfejsy następnie będzie
+        dziedziczona przez inną klasę
+        */
+
     }
 }
